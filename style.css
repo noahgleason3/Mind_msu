@@ -53,7 +53,7 @@ img{max-width:100%; height:auto; display:block}
   color: var(--brand);
 }
 .site-header.scrolled .btn-join {
-  background: var(--brand);
+  background: var(--accent);
   color: #fff;
   border-color: var(--brand);
 }
@@ -93,7 +93,7 @@ img{max-width:100%; height:auto; display:block}
 .nav-toggle .bar{display:block; width:24px; height:2px; background:#fff; margin:5px 0}
 
 .hero{
-  background: linear-gradient(180deg, #18453b 0%, #0b2e26 100%);
+  background: linear-gradient(180deg, #18453b 0%, #32ac8f 100%);
   color:#f8fafc;
   padding:5.5rem 0 5rem;
   text-align:center;
