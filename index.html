@@ -15,6 +15,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mindmsu.com" />
   <meta property="og:image" content="img/og-image.jpg" />
+  <meta name="theme-color" content="#18453b" />
 </head>
 <body>
   <!-- Skip link for accessibility -->
@@ -27,8 +28,7 @@
         <span class="brand-text">MIND MSU</span>
       </a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Toggle navigation</span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
 
@@ -67,7 +67,7 @@
         </div>
         <figure class="about-figure">
           <!-- Replace with your real image -->
-          <img src="img/students-running.jpg" alt="MSU students running together at a MIND MSU event" />
+          <img src="img/students-running.jpg" alt="MSU students running together at a MIND MSU event" width="1200" height="800" />
           <figcaption>Community, movement, and accountability.</figcaption>
         </figure>
       </div>
@@ -202,8 +202,11 @@
           <p>Follow us on Instagram to stay updated with events, activities, and resources.</p>
           <p><a class="btn btn-primary" href="https://www.instagram.com/mind.msu/" target="_blank" rel="noopener">Follow @mind.msu</a></p>
           <!-- Optional Netlify form: quickly capture interest -->
-          <form name="interest" method="POST" data-netlify="true" class="interest-form" netlify>
+          <form name="interest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="interest-form" netlify action="/thank-you">
             <input type="hidden" name="form-name" value="interest" />
+            <p class="sr-only">
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
             <label>
               Name
               <input type="text" name="name" autocomplete="name" required />
