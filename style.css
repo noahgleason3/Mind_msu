@@ -52,6 +52,10 @@ img{max-width:100%; height:auto; display:block}
 .site-header.scrolled .site-nav a {
   color: var(--brand);
 }
+.site-header .btn-join {
+  background: var(--accent);
+  border-color: var(--brand);
+}
 .site-header.scrolled .btn-join {
   background: var(--accent);
   color: #fff;
